@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3f2a3f;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .rectangulo {
+            --altura: 100px; 
+            width: calc(var(--altura) * 2); 
+            height: var(--altura);
+            background-color: #ba34db;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangulo"></div>
+</body>
+</html>
