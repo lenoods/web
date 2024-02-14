@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Smartphones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Buscador de Smartphones</h1>
+
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" placeholder="Escribe la marca">
+
+    <label for="precio">Rango de Precios:</label>
+    <select id="precio">
+        <option value="0-100">0 - 100 Euros</option>
+        <option value="101-300">101 - 300 Euros</option>
+        <option value="301-500">301 - 500 Euros</option>
+        <option value="501-1000">501 - 1000 Euros</option>
+        <option value="1001+">Más de 1000 Euros</option>
+    </select>
+
+    <button onclick="buscarSmartphones()">Buscar</button>
+
+    <script>
+      
+        var marcas = ["Apple", "Samsung", "Huawei", "Xiaomi", "OnePlus", "Google", "Sony", "Nokia"];
+
+        
+        var marcaInput = document.getElementById("marca");
+        new Awesomplete(marcaInput, {
+            list: marcas,
+            minChars: 1,
+            maxItems: 5,
+        });
+
+      
+        function buscarSmartphones() {
+            var marcaSeleccionada = marcaInput.value;
+            var rangoPrecioSeleccionado = document.getElementById("precio").value;
+
+          
+            alert("Búsqueda: Marca - " + marcaSeleccionada + ", Precio - " + rangoPrecioSeleccionado);
+        }
+    </script>
+
+</body>
+</html>
