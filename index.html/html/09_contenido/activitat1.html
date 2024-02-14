@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artículo de Periódico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .author {
+            font-style: italic;
+            color: #777;
+        }
+
+        .date {
+            color: #777;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .comments {
+            margin-top: 20px;
+        }
+
+        .comment {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Título del Artículo</h1>
+    
+    <p class="author">Por: Nombre del Autor</p>
+    
+    <p class="date">Fecha de Publicación: 21 de noviembre de 2023</p>
+    
+    <article>
+        <h2>Resumen</h2>
+        <p>
+            Aquí va el contenido del artículo. Puedes agregar varios párrafos para desarrollar tu contenido.
+        </p>
+    </article>
+
+    <div class="comments">
+        <h2>Comentarios</h2>
+
+        <div class="comment">
+            <p><strong>Usuario1:</strong> Excelente artículo, gracias por compartir esta información.</p>
+        </div>
+
+        <div class="comment">
+            <p><strong>Usuario2:</strong> ¿Podrías proporcionar más detalles sobre...?</p>
+        </div>
+
+       
+
+        <form action="#" method="post">
+            <label for="comment">Deja tu comentario:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Publicar Comentario</button>
+        </form>
+    </div>
+
+</body>
+</html>

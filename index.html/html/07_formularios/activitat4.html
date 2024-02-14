@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Cámaras de Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Buscador de Cámaras de Fotos</h1>
+
+    <form action="#" method="get">
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" placeholder="Canon, Nikon, Sony, etc." required>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" name="tipo">
+            <option value="dslr">DSLR</option>
+            <option value="mirrorless">Sin Espejo</option>
+            <option value="compacta">Compacta</option>
+        </select>
+
+        <label for="resolucion">Resolución (en megapíxeles):</label>
+        <input type="number" id="resolucion" name="resolucion" min="1" required>
+
+        <button type="submit">Buscar</button>
+
+    </form>
+
+</body>
+</html>
