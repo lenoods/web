@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido de Altavoces</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label, select, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulario de Pedido de Altavoces</h1>
+
+  <form action="#" method="post">
+    <label for="modelo">Modelo:</label>
+    <select id="modelo" name="modelo" required>
+      <option value="R4">R4</option>
+      <option value="R5">R5</option>
+      <option value="SR1">SR1</option>
+    </select>
+
+    <label for="potencia">Potencia máxima (entre 50 y 100):</label>
+    <input type="number" id="potencia" name="potencia" min="50" max="100" required>
+
+    <label for="bluetooth">¿Bluetooth?</label>
+    <select id="bluetooth" name="bluetooth" required>
+      <option value="si">Sí</option>
+      <option value="no">No</option>
+    </select>
+
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" required>
+
+    <button type="submit">Realizar Pedido</button>
+  </form>
+
+</body>
+</html>
